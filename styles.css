@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    background-image: url(https://images.unsplash.com/photo-1448317846460-907988886b33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+
+
+.container{
+    margin: auto;
+    width: 1280px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.nav h2{
+    font-size: 2rem;
+}
+
+.user-interact{
+    text-align: center;
+    width: 350px;
+    margin-top: 2px;
+}
+
+.user-interact input{
+    outline: none;
+    border-bottom-left-radius: 5px;
+    padding: 8px;
+    width: 75%;
+    border-top-left-radius: 5px;
+    border: 1px solid black;
+}
+
+.user-interact button{
+    width: fit-content;
+    padding: 8px;
+    transition: 1s;
+    cursor: pointer;
+    outline: none;
+    background-color: lightslategrey;
+    border: 1px solid lightslategray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.user-interact button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+
+.to-do-goals{
+    width: 500px;
+    margin: auto;
+}
+
+.item{
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    border-radius: 2px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: black;
+    padding: 16px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+
+}
+
+.item:hover{
+    border: 1px cyan;
+    box-shadow: 0 0 20px cyan;
+}
+
+.item i{
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width:768px) {
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav h2{
+        margin: 10px 0;
+    }
+
+    .to-do-goals{
+        width: 100%;
+    }
+}
+
+
+
+
+
